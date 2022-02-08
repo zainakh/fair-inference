@@ -1,9 +1,10 @@
-from dataset import load_adult_dataset
+from dataset import SyntheticDataset
+import numpy as np
 
 
 def main():
-    train, test = load_adult_dataset()
-
+    ds = SyntheticDataset(old_path='../data/synthetic/01-27-2022.pkl')
+    
 
 if __name__ == "__main__":
     main()
